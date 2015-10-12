@@ -2,7 +2,7 @@
 WARNING: These instructions must be run as ``root``, and will expose all standard Kubernetes ports and a few non-standard ports to potential security attacks.  Use at your own risk.
 
 ## Option 1: Running Master and Node on same host.
-Use this option for local development.  Tested on boot2docker, docker-machine, and Ubuntu standalone.
+Use this option for local development.  Tested on boot2docker, docker-machine, and Ubuntu baremetal.
 
 ### Run the Master
 1. ```git clone https://github.com/mingfang/docker-kubernetes-master```
@@ -28,7 +28,7 @@ NAME        LABELS                                          STATUS
 ```
 
 ## Option 2: Running one Master and many Nodes on different hosts.
-Use this option for creating larger clusters.  Tested on Ubuntu standlone, KVM, AWS EC2, and Digital Ocean.
+Use this option for creating larger clusters.  Tested on Ubuntu baremetal, KVM, AWS EC2, and Digital Ocean.
 
 ### Run the Master
 (same as Option 1)
