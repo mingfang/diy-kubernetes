@@ -101,3 +101,7 @@ kubernetes.		0	IN	A	10.1.1.1
 
 ## Service Router (Nginx)
 [https://github.com/mingfang/docker-knginx](https://github.com/mingfang/docker-knginx)
+
+## Ansible (Optional)
+[https://github.com/mingfang/docker-ansible](https://github.com/mingfang/docker-ansible)
+
