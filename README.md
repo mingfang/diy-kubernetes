@@ -98,3 +98,6 @@ kubernetes.		0	IN	A	10.1.1.1
 ## Node
 [https://github.com/mingfang/docker-kubernetes-node](https://github.com/mingfang/docker-kubernetes-node)
 <img src="node.png"/>
+
+## Service Router (Nginx)
+[https://github.com/mingfang/docker-knginx](https://github.com/mingfang/docker-knginx)
