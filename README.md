@@ -104,4 +104,4 @@ kubernetes.		0	IN	A	10.1.1.1
 
 ## Ansible (Optional)
 [https://github.com/mingfang/docker-ansible](https://github.com/mingfang/docker-ansible)
-
+Use ```services.yml```(https://github.com/mingfang/docker-ansible/blob/master/kubernetes/services.yml) to manage the entire cluster; It's like compose for Kubernetes.
