@@ -102,6 +102,11 @@ kubernetes.		0	IN	A	10.1.1.1
 ## Service Router (Nginx)
 [https://github.com/mingfang/docker-knginx](https://github.com/mingfang/docker-knginx)
 
+## Networking (Open vSwitch)
+https://github.com/kubernetes/kubernetes/blob/master/docs/admin/ovs-networking.md
+
+http://openvswitch.org
+
 ## Ansible (Optional)
 [https://github.com/mingfang/docker-ansible](https://github.com/mingfang/docker-ansible)
 
