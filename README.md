@@ -40,7 +40,7 @@ Use this option for creating larger clusters.  Tested on Ubuntu baremetal, KVM, 
 5. The Master is now running
 
 ### Run the Nodes(one per host)
-Note: Tested on Ubuntu 14.04.  Newer versions should work but not tested.
+Note: Tested on Ubuntu 16.04.  Newer versions should work but not tested.
 
 1. ```apt-get install -y bridge-utils openvswitch-switch```
 2. ```git clone https://github.com/mingfang/docker-kubernetes-node```
@@ -110,4 +110,6 @@ http://openvswitch.org
 ## Ansible (Optional)
 [https://github.com/mingfang/docker-ansible](https://github.com/mingfang/docker-ansible)
 
-Use ```services.yml```(https://github.com/mingfang/docker-ansible/blob/master/kubernetes/services.yml) to manage the entire cluster; It's like compose for Kubernetes.
+## Kubernetes Playbook
+[https://github.com/mingfang/kubernetes-playbook](https://github.com/mingfang/kubernetes-playbook)
+Use ```services.yml```(https://github.com/mingfang/kubernetes-playbook/blob/master/services.yml) to manage the entire cluster; It's like compose for Kubernetes.
