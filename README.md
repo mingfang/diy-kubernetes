@@ -46,7 +46,7 @@ Note: Tested on Ubuntu 16.04.  Newer versions should work but not tested.
 2. ```git clone https://github.com/mingfang/docker-kubernetes-node```
 3. ```cd docker-kubernetes-node```
 4. ```./build```
-5. ```./ovs-setup.sh```
+5. ```./fan-setup.sh```
 6. This script will setup the OpenvSwitch network. Follow the instructions at the end to reconfigure the Docker daemon.
 7. ```service docker restart``` to restart the Docker daemon
 8. ```./run <Master hostname>``` Note localhost will not work.
@@ -102,10 +102,8 @@ kubernetes.		0	IN	A	10.1.1.1
 ## Service Router (Nginx)
 [https://github.com/mingfang/docker-knginx](https://github.com/mingfang/docker-knginx)
 
-## Networking (Open vSwitch)
-https://github.com/kubernetes/kubernetes/blob/master/docs/admin/ovs-networking.md
-
-http://openvswitch.org
+## Networking (Ubuntu Fan vSwitch)
+https://wiki.ubuntu.com/FanNetworking
 
 ## Ansible (Optional)
 [https://github.com/mingfang/docker-ansible](https://github.com/mingfang/docker-ansible)
