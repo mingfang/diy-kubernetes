@@ -42,12 +42,12 @@ Use this option for creating larger clusters.  Tested on Ubuntu baremetal, KVM, 
 ### Run the Nodes(one per host)
 Note: Tested on Ubuntu 16.04.  Newer versions should work but not tested.
 
-1. ```apt-get install -y bridge-utils openvswitch-switch```
+1. ```apt-get install -y bridge-utils ubuntu-fan```
 2. ```git clone https://github.com/mingfang/docker-kubernetes-node```
 3. ```cd docker-kubernetes-node```
 4. ```./build```
 5. ```./fan-setup.sh```
-6. This script will setup the OpenvSwitch network. Follow the instructions at the end to reconfigure the Docker daemon.
+6. This script will setup the Ubuntu Fan network. Follow the instructions at the end to reconfigure the Docker daemon.
 7. ```service docker restart``` to restart the Docker daemon
 8. ```./run <Master hostname>``` Note localhost will not work.
 9. The Node is now running
@@ -102,7 +102,7 @@ kubernetes.		0	IN	A	10.1.1.1
 ## Service Router (Nginx)
 [https://github.com/mingfang/docker-knginx](https://github.com/mingfang/docker-knginx)
 
-## Networking (Ubuntu Fan vSwitch)
+## Networking (Ubuntu Fan Networking)
 https://wiki.ubuntu.com/FanNetworking
 
 ## Ansible (Optional)
