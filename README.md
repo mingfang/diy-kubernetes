@@ -110,4 +110,4 @@ https://wiki.ubuntu.com/FanNetworking
 
 ## Kubernetes Playbook
 [https://github.com/mingfang/kubernetes-playbook](https://github.com/mingfang/kubernetes-playbook)
-Use ```services.yml```(https://github.com/mingfang/kubernetes-playbook/blob/master/services.yml) to manage the entire cluster; It's like compose for Kubernetes.
+Use ```services.yml```(https://github.com/mingfang/kubernetes-playbook/blob/master/example/services.yml) to manage the entire cluster; It's like compose for Kubernetes.
