@@ -46,11 +46,8 @@ Note: Tested on Ubuntu 16.04.  Newer versions should work but not tested.
 2. ```git clone https://github.com/mingfang/docker-kubernetes-node```
 3. ```cd docker-kubernetes-node```
 4. ```./build```
-5. ```./fan-setup.sh```
-6. This script will setup the Ubuntu Fan network. Follow the instructions at the end to reconfigure the Docker daemon.
-7. ```service docker restart``` to restart the Docker daemon
-8. ```./run <Master hostname>``` Note localhost will not work.
-9. The Node is now running
+5. ```./run <Master hostname>``` Note localhost will not work.
+6. The Node is now running
 
 Repeat for every host that runs the Nodes.
 
