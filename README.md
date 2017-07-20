@@ -42,12 +42,11 @@ Use this option for creating larger clusters.  Tested on Ubuntu baremetal, KVM, 
 ### Run the Nodes(one per host)
 Note: Tested on Ubuntu 16.04.  Newer versions should work but not tested.
 
-1. ```apt-get install -y bridge-utils ubuntu-fan```
-2. ```git clone https://github.com/mingfang/docker-kubernetes-node```
-3. ```cd docker-kubernetes-node```
-4. ```./build```
-5. ```./run <Master hostname>``` Note localhost will not work.
-6. The Node is now running
+1. ```git clone https://github.com/mingfang/docker-kubernetes-node```
+2. ```cd docker-kubernetes-node```
+3. ```./build```
+4. ```./run <Master hostname>``` Note localhost will not work.
+5. The Node is now running
 
 Repeat for every host that runs the Nodes.
 
