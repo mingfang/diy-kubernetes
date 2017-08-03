@@ -98,8 +98,8 @@ kubernetes.		0	IN	A	10.1.1.1
 ## Service Router (Nginx)
 [https://github.com/mingfang/docker-knginx](https://github.com/mingfang/docker-knginx)
 
-## Networking (Ubuntu Fan Networking)
-https://wiki.ubuntu.com/FanNetworking
+## Networking (Calico)
+https://www.projectcalico.org
 
 ## Ansible (Optional)
 [https://github.com/mingfang/docker-ansible](https://github.com/mingfang/docker-ansible)
