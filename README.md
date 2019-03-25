@@ -42,12 +42,8 @@ NAME            LABELS                                            STATUS
 ## Master
 [docker-kubernetes-master](https://github.com/mingfang/docker-kubernetes-master)
 
-<img src="master.png"/>
-
 ## Node
 [docker-kubernetes-node](https://github.com/mingfang/docker-kubernetes-node)
-
-<img src="node.png"/>
 
 ## Networking
 [Ubuntu Fan Networking](https://wiki.ubuntu.com/FanNetworking)
