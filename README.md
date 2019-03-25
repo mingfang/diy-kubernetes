@@ -9,8 +9,10 @@ Create a Kubernetes clusters.  Tested on Ubuntu baremetal, KVM, AWS EC2, and Dig
 1. ```git clone https://github.com/mingfang/docker-kubernetes-master```
 2. ```cd docker-kubernetes-master```
 3. ```./build```
-4. ```./run```
-5. The Master is now running
+4. ```./fan-setup.sh```
+5. ```./run```
+
+The Master is now running
 
 ### Run the Nodes(one per host)
 Note: Tested on Ubuntu 18.04.  Newer versions should work but not tested.
@@ -18,11 +20,11 @@ Note: Tested on Ubuntu 18.04.  Newer versions should work but not tested.
 1. ```git clone https://github.com/mingfang/docker-kubernetes-node```
 2. ```cd docker-kubernetes-node```
 3. ```./build```
-4. On the Master, run ```docker exec kmaster /bootstrap-tokens.sh``` to generate the keys needed.
-5. On the Node, run the command printed by #4. Should look something like this ```KUBELET_TOKEN=s.oKCwIqfs7LGbIHJv666K9oFV PROXY_TOKEN=s.4TkiUcFsscWufhHUOzPjKgxn ./run <master-host>```
-6. The Node is now running
+4. ```./fan-setup.sh```
+5. On the Master, run ```docker exec kmaster /bootstrap-tokens.sh``` to generate the keys needed.
+6. On the Node, run the command printed by #4. Should look something like this ```KUBELET_TOKEN=s.oKCwIqfs7LGbIHJv666K9oFV PROXY_TOKEN=s.4TkiUcFsscWufhHUOzPjKgxn ./run <master-host>```
 
-Repeat for every host that runs the Nodes.
+The Node is now running.  Repeat for every host that runs the Nodes.
 
 ### Verify
 1. ```alias kubectl='docker run --rm -it --net=host kubernetes-master kubectl'``` on the Master host
@@ -39,10 +41,12 @@ NAME            LABELS                                            STATUS
 
 ## Master
 [docker-kubernetes-master](https://github.com/mingfang/docker-kubernetes-master)
+
 <img src="master.png"/>
 
 ## Node
 [docker-kubernetes-node](https://github.com/mingfang/docker-kubernetes-node)
+
 <img src="node.png"/>
 
 ## Networking
