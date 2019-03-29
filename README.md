@@ -4,6 +4,11 @@ WARNING: These instructions must be run as ``root``, and will expose all standar
 ## Running one Master and many Nodes on different hosts.
 Create a Kubernetes clusters.  Tested on Ubuntu baremetal, KVM, AWS EC2, and Digital Ocean.
 
+### Requirements
+- Ubuntu 18.04
+- Ubuntu Fan `apt-get install -y ubuntu-fan`
+- Docker
+
 ### Run the Master
 
 1. ```git clone https://github.com/mingfang/docker-kubernetes-master```
