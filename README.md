@@ -6,7 +6,6 @@ Create a Kubernetes clusters.  Tested on Ubuntu baremetal, KVM, AWS EC2, and Dig
 
 ### Requirements
 - Ubuntu 18.04
-- Ubuntu Fan `apt-get install -y ubuntu-fan`
 - Docker
 
 ### Run the Master
@@ -14,8 +13,7 @@ Create a Kubernetes clusters.  Tested on Ubuntu baremetal, KVM, AWS EC2, and Dig
 1. ```git clone https://github.com/mingfang/docker-kubernetes-master```
 2. ```cd docker-kubernetes-master```
 3. ```./build```
-4. ```./fan-setup.sh```
-5. ```./run```
+4. ```./run```
 
 The Master is now running
 
@@ -25,9 +23,8 @@ Note: Tested on Ubuntu 18.04.  Newer versions should work but not tested.
 1. ```git clone https://github.com/mingfang/docker-kubernetes-node```
 2. ```cd docker-kubernetes-node```
 3. ```./build```
-4. ```./fan-setup.sh```
-5. On the Master, run ```docker exec kmaster /bootstrap-tokens.sh``` to generate the keys needed.
-6. On the Node, run the command printed by #4. Should look something like this ```KUBELET_TOKEN=s.oKCwIqfs7LGbIHJv666K9oFV PROXY_TOKEN=s.4TkiUcFsscWufhHUOzPjKgxn ./run <master-host>```
+4. On the Master, run ```docker exec kmaster /bootstrap-tokens.sh``` to generate the keys needed.
+5. On the Node, run the command printed by #4. Should look something like this ```KUBELET_TOKEN=s.oKCwIqfs7LGbIHJv666K9oFV PROXY_TOKEN=s.4TkiUcFsscWufhHUOzPjKgxn ./run <master-host>```
 
 The Node is now running.  Repeat for every host that runs the Nodes.
 
@@ -49,9 +46,6 @@ NAME            LABELS                                            STATUS
 
 ## Node
 [docker-kubernetes-node](https://github.com/mingfang/docker-kubernetes-node)
-
-## Networking
-[Ubuntu Fan Networking](https://wiki.ubuntu.com/FanNetworking)
 
 ## Terraform Plugin
 [terraform-provider-k8s](https://github.com/mingfang/terraform-provider-k8s)
