@@ -29,7 +29,7 @@ Note: Tested on Ubuntu 18.04.  Newer versions should work but not tested.
 The Node is now running.  Repeat for every host that runs the Nodes.
 
 ### Verify
-1. ```alias kubectl='docker run --rm -it --net=host kubernetes-master kubectl'``` on the Master host
+1. ```alias kubectl='docker exec kmaster kubectl'``` on the Master host
 2. ```kubectl get nodes```
 3. You should see all the Nodes running
 ```
