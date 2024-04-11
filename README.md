@@ -24,7 +24,10 @@ Note: Tested on Ubuntu 18.04.  Newer versions should work but not tested.
 2. ```cd docker-kubernetes-node```
 3. ```./build```
 4. On the Master, run ```docker exec kmaster /bootstrap-tokens.sh``` to generate the keys needed.
-5. On the Node, run the command printed by #4. Should look something like this ```KUBELET_TOKEN=s.oKCwIqfs7LGbIHJv666K9oFV PROXY_TOKEN=s.4TkiUcFsscWufhHUOzPjKgxn ./run <master-host>```
+5. On the Node, run the command printed by #4. Should look something like this
+```
+KUBELET_TOKEN=s.oKCwIqfs7LGbIHJv666K9oFV PROXY_TOKEN=s.4TkiUcFsscWufhHUOzPjKgxn ./run <master-host>
+```
 
 The Node is now running.  Repeat for every host that runs the Nodes.
 
