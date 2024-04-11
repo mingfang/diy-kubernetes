@@ -2,7 +2,7 @@
 WARNING: These instructions must be run as ``root``, and will expose all standard Kubernetes ports and a few non-standard ports to potential security attacks.  Use at your own risk.
 
 ## Running one Master and many Nodes on different hosts.
-Create a Kubernetes clusters.  Tested on Ubuntu baremetal, KVM, AWS EC2, and Digital Ocean.
+Create a Kubernetes clusters.  Tested on Ubuntu baremetal and AWS EC2.
 
 ### Requirements
 - Ubuntu 18.04
